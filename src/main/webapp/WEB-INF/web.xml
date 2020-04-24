@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+	<servlet>
+		<servlet-name>GaeStore</servlet-name>
+		<servlet-class>com.gae.fbtweet.DataStoreServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GaeStore</servlet-name>
+		<url-pattern>/GaeStore</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+      <servlet-name>direct_tweet</servlet-name>
+      <jsp-file>direct_tweet.jsp</jsp-file>
+ </servlet>
+ <servlet-mapping>
+      <servlet-name>direct_tweet</servlet-name>
+      <url-pattern>/direct_tweet</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+      <servlet-name>toptweet</servlet-name>
+      <jsp-file>toptweet.jsp</jsp-file>
+ </servlet>
+ <servlet-mapping>
+      <servlet-name>toptweet</servlet-name>
+      <url-pattern>/toptweet</url-pattern>
+ </servlet-mapping>
+ 
+	<welcome-file-list>
+		<welcome-file>tweet.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
+
