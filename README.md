@@ -1,2 +1,2 @@
-# facebookTweet
+Implemented a twitter application like on Facebook Developer Platform which uses Google App Engine and its datastore to store and retrieve the tweets. Facebook API calls allow tweets along with user profile pictures to be displayed. Asynchronous Batch Requests allows the application to make multiple Graph API calls in a single HTTP request. GraphQL enables to read and write to the Facebook Social Graph.
  
